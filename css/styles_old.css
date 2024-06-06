@@ -1,0 +1,62 @@
+* {
+    --bg-color: #010043;
+    --main-color-1: #FFFFFF;
+    --accent-color: #E5FF7B;
+    background-color: var(--bg-color);
+    color: var(--main-color-1);
+}
+
+body {
+    margin: 0 7%; 
+}
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2%;
+    background-image: linear-gradient(to bottom, var(--bg-color), rgba(var(--bg-color), 0));
+    overflow: hidden;
+    top:0;
+}
+
+nav a {
+    font-family: "Helvetica Neue", sans-serif;
+    text-decoration: none;
+    margin: 0 2%;
+}
+
+
+p {
+    font-family: "Helvetica Neue", sans-serif;
+}
+div.hero {
+    margin: 13em 0;
+    display: flex;
+}
+
+div.hero div {
+
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+div.hero h1 {
+    font-family: "Rozha One", cursive;
+    font-size: 6em;
+    line-height: 100%;
+}
+
+#portrait {
+    width: 20em;
+    height: auto;
+    margin: auto 0em auto 2em;
+}
+
+.highlight {
+    color: var(--accent-color);
+}
+
+#hero_left {
+    align-items: left;
+}

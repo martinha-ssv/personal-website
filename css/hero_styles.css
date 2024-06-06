@@ -1,0 +1,82 @@
+/* Hero Section */
+.hero {
+    display: flex;
+    margin-top: 11vh;
+    justify-content: space-between;
+    align-items: center;
+}
+.hero h1 {
+    font-family: "Rozha One", cursive;
+    font-size: 8vw;
+    line-height: 110%;
+}
+
+.text_and_buttons { 
+    flex-direction: column;
+    margin-bottom: 10vh;
+    display: flex;
+    justify-content: space-between;
+}
+
+.button_row {
+    display: flex;
+    justify-content: space-around;
+}
+
+.portrait {
+    width: 30vw;
+    height: auto;
+    border-radius: 10vw;
+}
+
+.portrait img {
+    width: 100%;
+    height: auto;
+    border-radius: 10vw;
+}
+
+.button{
+    border-color: var(--accent-color);
+    border-width: 0.3vw;
+    border-style: solid;
+    border-radius: 10vw;
+    padding: 1vw 2.5vw;
+    background-color: var(--accent-color);
+    max-width: 40%;
+}
+
+.button a {
+    padding: 1vw;
+    font-family: 'Helvetica Neue', sans-serif;
+    font-size: 1.8vw;
+    font-weight: 500;
+    text-decoration: none;
+    color: var(--bg-color);
+    background-color: var(--accent-color);
+}
+
+.button[data-type="outline"] {
+    background-color: var(--bg-color);
+}
+
+.button[data-type="outline"] a {
+    color: var(--accent-color);
+    background-color: var(--bg-color);
+}
+
+#arrow {
+    width: 4vw;
+    height: auto;
+}
+
+#hero2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 3vw;
+}
+
+#hero2_text {
+    text-align: center;
+}

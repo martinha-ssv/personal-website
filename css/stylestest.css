@@ -84,3 +84,51 @@ section {
     margin-left: auto;
     margin-right: auto;
 }
+
+
+/* Hero section */
+.text_and_buttons {
+    flex: 1; 
+
+}
+
+.button_row {
+    display: flex;
+    gap: 1vw;
+    justify-content: start;
+
+}
+div .hero {
+    margin: 3vh 0;
+    display: flex;
+}
+
+div.hero div {
+
+    justify-content: space-around;
+    align-items: center;
+    
+}
+
+
+
+#portrait {
+    width: 30vw;
+    height: auto;
+    border-radius: 10vw;
+
+}
+
+.button {
+    display: flex;
+}
+
+.button a {
+    border-color: var(--accent-color);
+    color: var(--main-color-1);
+    padding: 1em;
+    border-radius: 2em;
+    font-size: 1.5vw;
+    text-decoration: none;
+    transition: background-color 0.3s ease-in-out;
+}
