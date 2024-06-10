@@ -4,6 +4,8 @@
     margin-top: 11vh;
     justify-content: space-between;
     align-items: center;
+    --button-hover-color: rgb(91, 85, 180);
+    --sec-button-hover-color: rgba(148, 165, 77, 0.5);
 }
 .hero h1 {
     font-family: "Rozha One", cursive;
@@ -43,6 +45,7 @@
     padding: 1vw 2.5vw;
     background-color: var(--accent-color);
     max-width: 40%;
+    transition: color ease-in-out 0.15s, background-color ease-in-out 0.15s;
 }
 
 .button a {
@@ -52,16 +55,21 @@
     font-weight: 500;
     text-decoration: none;
     color: var(--bg-color);
-    background-color: var(--accent-color);
+    background-color: transparent;
 }
 
 .button[data-type="outline"] {
     background-color: var(--bg-color);
+    color: var(--accent-color);
 }
 
 .button[data-type="outline"] a {
     color: var(--accent-color);
-    background-color: var(--bg-color);
+}
+
+.button[data-type="outline"]:hover {
+    background-color: var(--button-hover-color);
+    color: var(--accent-color);
 }
 
 #arrow {

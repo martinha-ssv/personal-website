@@ -48,7 +48,7 @@ img {
 }
 /* Nav Bar */
 
-#main_navbar {
+.main_navbar {
     position: fixed;
     top: 0;
     left: 0;
@@ -67,7 +67,7 @@ img {
     padding-top: 2vh;
 }
 
-#main_navbar a {
+.main_navbar a {
     font-family: "Helvetica Neue", sans-serif;
     text-decoration: none;
     margin: 0 2%;
@@ -80,7 +80,7 @@ img {
     border-radius: 2em;
 }
 
-#main_navbar a:hover {
+.main_navbar a:hover {
     background-color: var(--accent-color);
     color: var(--bg-color);
     
@@ -89,3 +89,25 @@ img {
     transition: cubic-bezier(0.075, 0.82, 0.165, 1);
     transition-duration: 1.5s;
 }
+
+/* Responsivity */
+.image_full{
+    display:flex;
+}
+ 
+.image_mobile{
+   display:none;
+}
+ 
+@media (max-width: 640px) and (min-width: 320px){
+   .image_full{
+    display:none;
+   }
+ 
+   .image_mobile{
+    display:flex;
+   }
+}
+
+/* Nav bar: set min width and reduce padding of the container so that the text flows from end to end of screen */
+/* Font sizes are also reduced */
